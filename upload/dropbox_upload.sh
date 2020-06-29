@@ -1,10 +1,10 @@
 #!/bin/bash
 # Setting up RasPi with this project.
 
-FILE_PATH='/home/pi/picam/archive/'
-FILENAME='2020-06-14_01-35-39.ts'
+FILE_PATH='/home/pi/picam/rec/'
 FILENAME=$1
-TODAY=`date +"%Y-%m-%d"`
+
+TODAY=$(date +"%Y-%m-%d")
 ACCESS_TOKEN='access-token'
 
 if [[ -f "$FILE_PATH$FILENAME" ]]; then
