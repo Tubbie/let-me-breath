@@ -11,5 +11,5 @@ os.system('echo "filename=' + current_time + '.ts" > ~/picam/hooks/start_record'
 time.sleep(15)
 os.system("touch ~/picam/hooks/stop_record")
 
-os.system("./../tmp/first.sh sdfdsf &")
+os.system("./../upload/dropbox_upload.sh " + current_time + ".ts &")
 print("Done")
