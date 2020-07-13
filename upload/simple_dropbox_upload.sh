@@ -16,7 +16,7 @@ do
     --header "Content-Type: application/octet-stream" \
     --data-binary @$FILE
     echo "Uploaded"
-    rm  $FILEl
+    rm  $FILE
   done
 
 sleep 1m
