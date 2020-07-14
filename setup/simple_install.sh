@@ -17,8 +17,8 @@ done
 
 echo Record duration is $DURATION minutes.
 
-DURATION=$(($DURATION * 60 * 1000))
-echo Record duration is $DURATION ms.
+DURATION_IN_MS=$(($DURATION * 60 * 1000))
+echo Record duration is $DURATION_IN_MS ms.
 
 read -p "Enter dropbox access token: " ACCESS_TOKEN
 echo Dropbox acces token is $ACCESS_TOKEN
@@ -27,8 +27,8 @@ chmod +x /home/pi/code/simple_record.sh
 chmod +x /home/pi/code/simple_dropbox_upload.sh
 
 sed -i 's/access-token/'"$ACCESS_TOKEN"'/g' /home/pi/code/simple_dropbox_upload.sh
-sed -i 's/sleep-duration/'"$DURATION"'/g' /home/pi/code/simple_dropbox_upload.sh
-sed -i 's/record-duration/'"$DURATION"'/g' /home/pi/code/simple_record.sh
+sed -i 's/sleep-duration/'"$DURATION"'m/g' /home/pi/code/simple_dropbox_upload.sh
+sed -i 's/record-duration/'"$DURATION_IN_MS"'/g' /home/pi/code/simple_record.sh
 
 crontab -l > cronJob
 #echo new cron into cron file
