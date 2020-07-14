@@ -27,6 +27,7 @@ chmod +x /home/pi/code/simple_record.sh
 chmod +x /home/pi/code/simple_dropbox_upload.sh
 
 sed -i 's/access-token/'"$ACCESS_TOKEN"'/g' /home/pi/code/simple_dropbox_upload.sh
+sed -i 's/sleep-duration/'"$DURATION"'/g' /home/pi/code/simple_dropbox_upload.sh
 sed -i 's/record-duration/'"$DURATION"'/g' /home/pi/code/simple_record.sh
 
 crontab -l > cronJob

@@ -3,7 +3,7 @@
 FILE_PATH=/home/pi/code/out/*
 ACCESS_TOKEN='access-token'
 TODAY=$(date +"%Y-%m-%d")
-
+DURATION=sleep-duration
 while true
 do
   for FILE in $FILE_PATH
@@ -19,5 +19,5 @@ do
     rm  $FILE
   done
 
-sleep 1m
+sleep $DURATION
 done
