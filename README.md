@@ -57,6 +57,13 @@ Steps to install.
    192.168.0.100 dev wlp2s0 lladdr b8:27:eb:xx:xx:xx STALE
    ```
    Here `192.168.0.100` is the IP address.
+   
+8. Now we have to enable the camera module on RaspberryPi. It is disabled by default.
+    * In terminal run `sudo raspi-config`.
+    * Select Interfacing Options.
+    * Select P1 Camera and select enable.
+    * Select Finish. 
+    * RaspberryPi will restart.
 
 That's all you are all set. Now lets head over to usage.
 
@@ -64,8 +71,30 @@ That's all you are all set. Now lets head over to usage.
 
 Currently, this project only supports Dropbox as remote storage. If you wish to have more options please feel free to create an issue or better make a pull request. :-)
 
+Setting Up DropBox.  
+You would need to enable dropbox api and generate an access token.
+1. Login to your [Dropbox APP Console](https://www.dropbox.com/developers/apps)
+2. Click on create app.
+3. Select Dropbox API for `Choose an API`
+4. Select App Folder for `Choose the type of access you need`
+5. Give a name to your folder. This is a unique name dropbox wide, hence the desired name might not be available.
+6. Click create app. You will be taken to the app console page.
+7. In the section `OAuth 2` Click on `Generate`.
+8. Copy the generated string and save it in a file. Important: Do not share this key with anyone.
+ 
+Setting up RaspberryPi:
+1. Use an SSH client to login to RaspberryPi. (Default Username:`pi` , Password: `raspberry`)
+2. In terminal of RaspberryPi execute the following.
+    ```bash
+   wget https://raw.githubusercontent.com/Tubbie/let-me-breath/master/setup/simple_install.sh -P /home/pi && chmod +x /home/pi/simple_install.sh
+   ```
+3. Run the following code for it to automatically setup the capture and upload service.
+    ```bash
+   sh /home/pi/simple_install.sh
+    ```
+4. Follow the instructions.
 
-
+Next time the RaspberryPi boots up it will start recording and files will be uploaded to dropbox.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
