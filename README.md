@@ -106,5 +106,8 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 * Support for different Online Drive providers (Ex: GoogleDrive, OneDrive etc.)
 * Documentation with Windows and MAC OS.
 
+## Disclaimer
+Please check your local laws before recording in public areas. The author or contributors are not responsible for any unethical, illegal use or usage with intent of malice.
+
 ## License
 [MIT](https://choosealicense.com/licenses/gpl-3.0/)
