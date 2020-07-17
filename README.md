@@ -99,5 +99,12 @@ Next time the RaspberryPi boots up it will start recording and files will be upl
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
+## Future implementation / Need Help.
+* Voice activated recording.
+* Recording with audio.
+* Recording with bluetooth.
+* Support for different Online Drive providers (Ex: GoogleDrive, OneDrive etc.)
+* Documentation with Windows and MAC OS.
+
 ## License
 [MIT](https://choosealicense.com/licenses/gpl-3.0/)
