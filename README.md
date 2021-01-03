@@ -1,6 +1,6 @@
-# LET-ME-BREATH
+# LET-ME-BREATHE
 
-Let me breath is an open source project to develop a low cost body camera.  
+Let me breathe is an open source project to develop a low cost body camera.  
 Main goal of the project is to transfer to a remote server as soon as possible.
 The Project uses `RasberryPi Zero W` to use as a module
 to capture via the camera and upload to a specific remote file storage or a server.
@@ -40,7 +40,7 @@ Steps to install.
    ```
    This will enable the SSH on your RaspberryPi and can come in handy for quick debugging.
 5. Second: we need to set the WiFi configuration on the SD card.
-    * Download wifi configuration file. https://github.com/Tubbie/let-me-breath/blob/master/setup/wpa_supplicant.conf
+    * Download wifi configuration file. https://github.com/Tubbie/let-me-breathe/blob/master/setup/wpa_supplicant.conf
     * Replace
          * `<YourCountryCode>` with your country code.  Ex: For U.S.A `US` and Germany `DE` etc.
          * `<YourWifiNetworkName>` with the WiFi name.
