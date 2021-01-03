@@ -5,6 +5,8 @@ Main goal of the project is to transfer to a remote server as soon as possible.
 The Project uses `RasberryPi Zero W` to use as a module
 to capture via the camera and upload to a specific remote file storage or a server.
 
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/s8nQU0ljaas/0.jpg)](https://youtu.be/s8nQU0ljaas)
+
 ## Installation
 
 Requirements for the Installation.
@@ -90,7 +92,7 @@ Setting up RaspberryPi:
    ```
 3. Run the following code for it to automatically setup the capture and upload service.
     ```bash
-   sh /home/pi/simple_install.sh
+    ./home/pi/simple_install.sh
     ```
 4. Follow the instructions.
 
