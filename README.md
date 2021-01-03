@@ -88,7 +88,7 @@ Setting up RaspberryPi:
 1. Use an SSH client to login to RaspberryPi. (Default Username:`pi` , Password: `raspberry`)
 2. In terminal of RaspberryPi execute the following.
     ```bash
-   wget https://raw.githubusercontent.com/Tubbie/let-me-breath/master/setup/simple_install.sh -P /home/pi && chmod +x /home/pi/simple_install.sh
+   wget https://raw.githubusercontent.com/Tubbie/let-me-breathe/master/setup/simple_install.sh -P /home/pi && chmod +x /home/pi/simple_install.sh
    ```
 3. Run the following code for it to automatically setup the capture and upload service.
     ```bash
